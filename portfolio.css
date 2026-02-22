@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.project-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.contact {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer p{
+    font-size: small;
+    color: rgb(180, 179, 179);
+}
+aside img{
+    width: 250px;
+    height: 250px;
+    border: none;
+    border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
